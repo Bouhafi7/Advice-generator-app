@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Manrope;
+}
+
+body{
+    min-height: 100vh;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advice-container{
+    width: 550px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+    padding: 40px 40px 60px;
+    text-align: center;
+    position: relative;
+}
+
+.advice-container .title{
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.advice-container .advice{
+    color: hsl(193, 38%, 86%);
+    font-weight: 600;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.advice-container > img{
+    width: 100%;
+}
+
+.advice-container .change-advice{
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: hsl(150, 100%, 66%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.advice-container .change-advice:hover{
+    background-color: hsl(150, 100%, 72%);
+    box-shadow: 0px 0px 15px hsl(150, 100%, 72%);
+}
+
+@media (max-width:781px){
+    .advice-container{
+        width: calc(100% - 40px);
+    }
+}
